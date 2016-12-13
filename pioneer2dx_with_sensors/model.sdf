@@ -181,9 +181,9 @@
       <wheelSeparation>0.39</wheelSeparation>
       <wheelDiameter>0.15</wheelDiameter>
       <torque>5</torque>
-      <commandTopic>cmd_vel</commandTopic>
-      <odometryTopic>odom</odometryTopic>
-      <odometryFrame>odom</odometryFrame>
+      <commandTopic>RosAria/cmd_vel</commandTopic>
+      <odometryTopic>RosAria/pose</odometryTopic>
+      <odometryFrame>RosAria/pose</odometryFrame>
       <robotBaseFrame>chassis</robotBaseFrame>
     </plugin>
     
@@ -238,7 +238,7 @@
         </ray>
         <plugin name="laser" filename="libgazebo_ros_laser.so">
           <robotNamespace></robotNamespace>
-          <topicName>ray_scan</topicName>
+          <topicName>scan</topicName>
           <frameName>base_laser_link</frameName>
         </plugin>
         <always_on>1</always_on>
