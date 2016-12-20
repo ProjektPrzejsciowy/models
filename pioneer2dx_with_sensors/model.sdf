@@ -408,7 +408,6 @@
         <visualize>true</visualize>
       </sensor--> 
     </link>
-
     <joint name="imu_joint" type="revolute">
       <child>imu</child>
       <parent>chassis</parent>
