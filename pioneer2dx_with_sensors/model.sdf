@@ -185,6 +185,13 @@
       <odometryTopic>RosAria/pose</odometryTopic>
       <odometryFrame>RosAria/pose</odometryFrame>
       <robotBaseFrame>chassis</robotBaseFrame>
+      <legacyMode>true</legacyMode>
+      <rosDebugLevel>na</rosDebugLevel>
+      <publishWheelTF>false</publishWheelTF>
+      <publishWheelJointState>false</publishWheelJointState>
+      <wheelAcceleration>0</wheelAcceleration>
+      <wheelTorque>5</wheelTorque>
+      <publishTf>1</publishTf>
     </plugin>
     
     <!-- Sensory -->
