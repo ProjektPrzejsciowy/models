@@ -184,6 +184,7 @@
       <commandTopic>RosAria/cmd_vel</commandTopic>
       <odometryTopic>RosAria/pose</odometryTopic>
       <odometryFrame>RosAria/pose</odometryFrame>
+      <odometrySource>world</odometrySource>
       <robotBaseFrame>chassis</robotBaseFrame>
       <legacyMode>true</legacyMode>
       <rosDebugLevel>na</rosDebugLevel>
@@ -369,12 +370,16 @@
     <link name="imu">
       <pose>0.0 0 0.28 0 0 0</pose>
       <inertial>
-        <mass value="${dummy_mass}" />
-        <origin xyz="0 0 0" />
-        <inertia ixx="${dummy_inertia}" ixy="0.0" ixz="0.0"
-                 iyy="${dummy_inertia}" iyz="0.0" 
-                 izz="${dummy_inertia}" />
-      </inertial>     
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <iyy>0.001</iyy>
+          <izz>0.001</izz>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyz>0.0</iyz>
+        </inertia>
+      </inertial>
       <visual name="visual">
         <geometry>
           <box>
